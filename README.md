@@ -70,10 +70,14 @@ Install the plugin with your preferred package manager:
 
 ## <i class="fa-regular fa-square-check"></i> Todo
 
-As **floating-help** aims to address a very simple problem, I consider it done as it is. Although, I have some ideas that I may implement in the future:
+As **floating-help** aims to address a very simple problem, I consider it done as it is. Although, I have some ideas that I may implement in the future.
+
+<details><summary>Todo List</summary>
 
 - [ ] Option to centralize the help window in the active window instead of in the editor
 - [ ] Option to opeh the help window in a vertical split instead of floating window
+
+</details>
 
 
 ## <i class="fa-solid fa-code-pull-request"></i> Contributions
