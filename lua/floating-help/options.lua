@@ -1,21 +1,29 @@
-local Defaults = require('floating-help.defaults')
-local M        = {}
+local M      = {}
 
-M.plugin       = {
-  mode = Defaults.args.mode,
+M.args       = {
+  border = 'none', -- none, single, double, rounded, solid, shadow, array
+  ratio = 0.8,
 }
 
-M.float_opts   = {
-  border = Defaults.args.border,
-  style = 'minimal',
-  anchor = 'NW',
-  relative = Defaults.args.relative,
-  offset_x = (vim.api.nvim_win_get_width(0) - 80) / 2,
-  offset_y = 1,
-  zindex = 49,
-  external = false,
-  focusable = true,
-  noautocmd = true,
+M.vars       = {
+  group_name = 'FloatingHelpPlugin'
+}
+
+M.float_opts = {
+  width = 78,
+  height = 0,
+  window_opts = {
+    border = M.args.border,
+    style = 'minimal',
+    anchor = 'NW',
+    relative = 'editor',
+    offset_x = 0,
+    offset_y = 0,
+    zindex = 49,
+    external = false,
+    focusable = true,
+    noautocmd = true,
+  },
 }
 
 return M
