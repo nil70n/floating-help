@@ -1,4 +1,4 @@
-# 󰞋 floating-help
+# <i class="fa-regular fa-circle-question"></i> floating-help
 
 `floating-help` opens the help buffer in a floating window.
 
@@ -25,7 +25,7 @@ Install the plugin with your preferred package manager:
 <!-- setup:end -->
 
 
-## ⚙️ Configuration
+## <i class="fa-solid fa-gear"></i> Configuration
 
 **floating-help** is a very simple plugin and does not have much options to configure. The available options are listed below.
 
@@ -43,12 +43,12 @@ Install the plugin with your preferred package manager:
 
 
 * border: Style of (optional) window border. The accepted string values are:
-'solid': Adds padding by a single whitespace cell (default).
-'none': No border.
-'single': A single line box.
-'double': A double line box.
-'rounded': Like 'single', but with rounded corners ('╭' etc.).
-'shadow': A drop shadow effect by blending with the background.
+  * 'solid': Adds padding by a single whitespace cell (default).
+  * 'none': No border.
+  * 'single': A single line box.
+  * 'double': A double line box.
+  * 'rounded': Like 'single', but with rounded corners ('╭' etc.).
+  * 'shadow': A drop shadow effect by blending with the background.
 
 * ratio: The space related to the editor hight that will be taken by the floating window. Must be between 0.5 and 1.
   * The default value is 0.8.
@@ -68,18 +68,14 @@ Install the plugin with your preferred package manager:
 </details>
 
 
-##  Todo
+## <i class="fa-regular fa-square-check"></i> Todo
 
 As **floating-help** aims to address a very simple problem, I consider it done as it is. Although, I have some ideas that I may implement in the future:
-
-<details><summary>Todo</summary>
 
 - [ ] Option to centralize the help window in the active window instead of in the editor
 - [ ] Option to opeh the help window in a vertical split instead of floating window
 
-</details>
 
+## <i class="fa-solid fa-code-pull-request"></i> Contributions
 
-## Contributions
-
-Pull Requests are welcome. If you're addressing a problem with the plugin, consider open an issue before the Pull Request.
+Pull Requests are welcome. If you're addressing a problem with the plugin, consider open an issue before thea Pull Request.
