@@ -2,6 +2,7 @@
 
 `floating-help` opens the help buffer in a floating window.
 
+
 ## 📦 Installation
 
 Install the plugin with your preferred package manager:
@@ -12,13 +13,17 @@ Install the plugin with your preferred package manager:
 
 ```lua
 {
-  "nil70n/floating-help",
+  'nil70n/floating-help',
   -- optional
-  opts = { border = 'single' }
+  opts = {
+   border = 'single',
+   ratio = 0.6
+  }
 }
 ```
 
 <!-- setup:end -->
+
 
 ## ⚙️ Configuration
 
@@ -30,27 +35,51 @@ Install the plugin with your preferred package manager:
 
 ```lua
 {
-  border = 'none'
+  border = 'solid',
+  ratio = 0.8
 }
 ```
 <!-- config:end -->
 
 
-* border: Style of (optional) window border. This can either be a string or an array. The string values are
-"none": No border (default).
-"single": A single line box.
-"double": A double line box.
-"rounded": Like "single", but with rounded corners ("╭" etc.).
-"solid": Adds padding by a single whitespace cell.
-"shadow": A drop shadow effect by blending with the background.
-If it is an array, it should have a length of eight or any divisor of eight. The array will specify the eight chars building up the border in a clockwise fashion starting with the top-left corner. As an example, the double box style could be specified as [ "╔", "═" ,"╗", "║", "╝", "═", "╚", "║" ]. If the number of chars are less than eight, they will be repeated. Thus an ASCII border could be specified as [ "/", "-", "\\", "|" ], or all chars the same as [ "x" ]. An empty string can be used to turn off a specific border, for instance, [ "", "", "", ">", "", "", "", "<" ] will only make vertical borders but not horizontal ones. By default, FloatBorder highlight is used, which links to WinSeparator when not defined. It could also be specified by character: [ ["+", "MyCorner"], ["x", "MyBorder"] ].
+* border: Style of (optional) window border. The accepted string values are:
+'solid': Adds padding by a single whitespace cell (default).
+'none': No border.
+'single': A single line box.
+'double': A double line box.
+'rounded': Like 'single', but with rounded corners ('╭' etc.).
+'shadow': A drop shadow effect by blending with the background.
+
+* ratio: The space related to the editor hight that will be taken by the floating window. Must be between 0.5 and 1.
+  * The default value is 0.8.
+  * If the ratio informed is less than 0.5 the plugin will assume 0.5.
+  * If the ratio informed is greater than 1, the plugin will divide the number and get use it as a decimal. Example:
+
+    ```lua
+    { ratio = 7 }
+    ```
+
+    results in:
+
+    ```lua
+    { ratio = 0.7 }
+    ```
 
 </details>
 
+
 ##  Todo
 
-**floating-help** is in very early development and there are the pending features planned:
+As **floating-help** aims to address a very simple problem, I consider it done as it is. Although, I have some ideas that I may implement in the future:
 
-- [ ] Relative window centralization
-- [ ] Default to centralize in the editor
-- [ ] Option to open the help in a vsplit
+<details><summary>Todo</summary>
+
+- [ ] Option to centralize the help window in the active window instead of in the editor
+- [ ] Option to opeh the help window in a vertical split instead of floating window
+
+</details>
+
+
+## Contributions
+
+Pull Requests are welcome. If you're addressing a problem with the plugin, consider open an issue before the Pull Request.

@@ -1,7 +1,7 @@
 local M      = {}
 
 M.args       = {
-  border = 'none', -- none, single, double, rounded, solid, shadow, array
+  border = 'solid', -- none, single, double, rounded, solid, shadow, array
   ratio = 0.8,
 }
 
