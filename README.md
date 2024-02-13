@@ -24,6 +24,17 @@ Install the plugin with your preferred package manager:
 
 <!-- setup:end -->
 
+**floating-help** does not require the execution of the `setup` function, so you can just add the reference and start using the plugin:
+
+<!-- short_setup:start -->
+
+```lua
+{ 'nil70n/floating-help' }
+```
+
+<!-- short_setup:end -->
+
+
 
 ## ⚙️ Configuration
 
@@ -73,7 +84,7 @@ To keep **floating-help** as simple as possible, I consider it done as it is. Al
 <details><summary>Todo List</summary>
 
 - [ ] Option to centralize the help window in the active pane instead of the editor
-- [ ] Option to open the help window in a vertical split instead of floating window
+- [ ] Option to open the help window in a vertical split instead of a floating window
 
 </details>
 
