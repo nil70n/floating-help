@@ -1,4 +1,4 @@
-# <i class="fa-regular fa-circle-question"></i> floating-help
+# ❓ floating-help
 
 `floating-help` opens the help buffer in a floating window.
 
