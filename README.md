@@ -1,7 +1,7 @@
 # ❓ floating-help
 
 `floating-help` opens the help buffer in a floating window.
-
+![Preview](/assets/help.png)
 
 ## 📦 Installation
 
